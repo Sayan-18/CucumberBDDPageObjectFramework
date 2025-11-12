@@ -1,5 +1,6 @@
 package pages.actions;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import pages.locators.CarDekhoHomePageLocators;
@@ -14,10 +15,11 @@ public class CarDekhoHomePageActions {
 	}
 
 	public void moveToExploreNewCarsMenu() {
-
+		Actions action = new Actions(SeleniumDriver.getDriver());
+		action.moveToElement(cardDekhoHomePageLocators.newCarsLink);
 	}
 
 	public void clickOnExploreNewCarsMenu() {
-
+		cardDekhoHomePageLocators.exploreNewCarsLink.click();
 	}
 }

@@ -11,4 +11,6 @@ public class ExploreNewCarPageLocators {
 	public WebElement selectAllVehicleTypeDropdown;
 	@FindBy(how = How.NAME, using = "go")
 	public WebElement searchButton;
+	@FindBy(how=How.CSS, using =".gs_ta_results ul li")
+	public WebElement budgetDropDownOptions;
 }
